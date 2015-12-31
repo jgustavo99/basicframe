@@ -1,0 +1,23 @@
+{
+    "name": "BasicFrame",
+    "description": "Um simples framework com PHP e MVC!",
+    "authors": [
+        {
+            "name": "João Gustavo Balestrin dos Santos",
+            "email": "joaogustavo.b@hotmail.com"
+        }
+    ],
+    "require": {
+        "slim/slim": "^3.0",
+        "illuminate/database": "*"
+    },
+    "autoload" : {
+        "psr-4" : {
+            "App\\" : "app/",
+            "Core\\" : "core/"
+        },
+        "files" : [
+            "app/helpers.php"
+        ]
+    }
+}
